@@ -11,7 +11,7 @@ This program comprises of the following steps:
 1. Collect the read pair quality scores: **O(n)**
 2. Random shuffle for unbiased selection in case of ties: **O(n)**
 3. Sort read indices based on their quality score: **O(nlog(n))**
-4. Load read indices into a set in order to look up membership in constant time: **O(n)**
+4. Load read indices into a set in order to look up membership in average constant time: **O(n)**
 5. Read and filter input for the selected read pairs: **O(n)**
 
 Therefore, the overall time complexity is **O(nlog(n))**.
